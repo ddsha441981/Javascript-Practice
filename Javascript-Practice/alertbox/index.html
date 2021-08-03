@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // Alert Box
+        // we can use alert Box by using window.alert();
+        // or simply alert();
+
+        let msg = "Hey, Deendayal Kumawat here,";
+        // window.alert(msg);
+        // alert(msg);
+
+        /* Prompt box */
+        // let age = prompt("Enter your age");
+        // document.write(age);
+
+        /*Confirm Box*/
+        let choice = confirm("Do you want to go to google");
+        if (choice == true) {
+            location.href = "http://www.google.com";
+        } else {
+            alert("you choose cancel");
+        }
+
+        // Console object methods
+        // log(),
+        // info(),
+        // warn(),
+        // error(),
+        // table(),
+        // time(),
+        // claer()
+
+        // 1. log()
+        console.log("for log message ");
+        // 2. info()
+        console.info("for info message");
+        // 3. warn()
+        console.warn("for warning message");
+        // 4. error()
+        console.error("for error message");
+        // // 5. table()
+        // console.table("Tfor log message");
+        // 6. time()
+        // console.time();
+        // 7. clear()
+        setTimeout(() => {
+            console.log("Clearing data");
+            console.clear();
+
+        }, 3000);
+
+
+        // For table() method work with object and show data in table format
+        /*
+        (index)   Value
+        Name	"Deendayal Kumawat"
+        Marks	"595"
+        address	"Jaipur Rajasthan"
+        */
+        student = {
+            Name: "Deendayal Kumawat",
+            Marks: "595",
+            address: 'Jaipur Rajasthan'
+        };
+        console.table(student);
+    </script>
+
+</body>
+
+</html>
